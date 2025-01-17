@@ -64,7 +64,7 @@
   <script>
     function calculateExpression(x, y, z) {
       const base = x / y - (x / y * 0.001);
-      return base * z - (base * z * 0.001);
+      return base.toFixed(3) * z - (base * z * 0.001);
     }
 
     function calculate() {
